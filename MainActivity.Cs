@@ -68,6 +68,7 @@ namespace TicTacToe
                 btno.Visibility = Android.Views.ViewStates.Invisible;
                 btnx.Visibility = Android.Views.ViewStates.Invisible;
                 o_turn = true;
+                x_turn = false;
                 game_started = true; // The game has started
                 info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}"; // Changing the text and showing how many wins each player has
             }
@@ -77,6 +78,7 @@ namespace TicTacToe
                 btno.Visibility = Android.Views.ViewStates.Invisible;
                 btnx.Visibility = Android.Views.ViewStates.Invisible;
                 x_turn = true;
+                o_turn = false;
                 game_started = true; // The game has started
                 info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}"; // Changing the text and showing how many wins each player has
 
@@ -90,7 +92,7 @@ namespace TicTacToe
                     TicTac[0, 0] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if(o_turn && TicTac[0, 0] == -1) //If it is the turn of O and the button is empty
@@ -99,7 +101,7 @@ namespace TicTacToe
                     TicTac[0, 0] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -111,7 +113,7 @@ namespace TicTacToe
                     TicTac[0, 1] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if(o_turn && TicTac[0, 1] == -1) //If it is the turn of O and the button is empty
@@ -120,7 +122,7 @@ namespace TicTacToe
                     TicTac[0, 1] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -132,7 +134,7 @@ namespace TicTacToe
                     TicTac[0, 2] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 } 
                 else if(o_turn && TicTac[0, 2] == -1) //If it is the turn of O and the button is empty
@@ -141,7 +143,7 @@ namespace TicTacToe
                     TicTac[0, 2] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -153,7 +155,7 @@ namespace TicTacToe
                     TicTac[1, 0] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if(o_turn && TicTac[1, 0] == -1) //If it is the turn of O and the button is empty
@@ -162,7 +164,7 @@ namespace TicTacToe
                     TicTac[1, 0] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -175,7 +177,7 @@ namespace TicTacToe
                     TicTac[1, 1] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if (o_turn && TicTac[1, 1] == -1) //If it is the turn of O and the button is empty
@@ -184,7 +186,7 @@ namespace TicTacToe
                     TicTac[1, 1] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -196,7 +198,7 @@ namespace TicTacToe
                     TicTac[1, 2] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if (o_turn && TicTac[1, 2] == -1) //If it is the turn of O and the button is empty
@@ -205,7 +207,7 @@ namespace TicTacToe
                     TicTac[1, 2] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player XO Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -217,7 +219,7 @@ namespace TicTacToe
                     TicTac[2, 0] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if (o_turn && TicTac[2, 0] == -1) //If it is the turn of O and the button is empty
@@ -226,7 +228,7 @@ namespace TicTacToe
                     TicTac[2, 0] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -238,7 +240,7 @@ namespace TicTacToe
                     TicTac[2, 1] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if(o_turn && TicTac[2, 1] == -1) //If it is the turn of O and the button is empty
@@ -247,7 +249,7 @@ namespace TicTacToe
                     TicTac[2, 1] = 0;
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -259,7 +261,7 @@ namespace TicTacToe
                     TicTac[2, 2] = 1; // Entering the value into the matrix
                     o_turn = true;
                     x_turn = false;
-                    info.Text = "Player O Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer O Turn"; // Announcing the turn
                     count_X++; // Adding one to the count
                 }
                 else if(o_turn && TicTac[2, 2] == -1) //If it is the turn of O and the button is empty
@@ -268,7 +270,7 @@ namespace TicTacToe
                     TicTac[2, 2] = 0; // Entering the value into the matrix
                     x_turn = true;
                     o_turn = false;
-                    info.Text = "Player X Turn"; // Announcing the turn
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nPlayer X Turn"; // Announcing the turn
                     count_O++; // Adding one to the count
                 }
             }
@@ -294,7 +296,8 @@ namespace TicTacToe
                         TicTac[i, j] = -1; //Reset the matrix
                     }
                 }
-                info.Text = "Game started plz choose a player"; //Changin the text 
+                info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}\nGame started plz choose a player"; //Changin the text 
+                game_started = false;
             }
 
 
@@ -327,7 +330,7 @@ namespace TicTacToe
                     if (TicTac[0, 2] == 1) winner_X = true;
                     else if (TicTac[0, 2] == 0) winner_O = true;
                 }
-                // Check if there are any empty spaces in the game to check if it is a tie
+                // Check if there are any empty spaces in the game in order to check if it is a tie
                 for (int i = 0; i < 3; i++)
                 {
                     for (int j = 0; j < 3; j++)
@@ -345,6 +348,7 @@ namespace TicTacToe
                 {
                     Toast.MakeText(Application.Context, "X is the winner!", ToastLength.Short).Show(); // Pop a Toast that says X is the winner
                     count_winnings_X++; // Adding to the count of winnings
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}";
                     game_started = false; // Changing the bool parameter to false (game ended)
                     winner_X = false;
                 }
@@ -352,6 +356,7 @@ namespace TicTacToe
                 {
                     Toast.MakeText(Application.Context, "O is the winner!", ToastLength.Short).Show(); // Pop a Toast that says O is the winner
                     count_winnings_O++; // Adding to the count of winnings
+                    info.Text = $"Count O: {count_winnings_O}\nCount X: {count_winnings_X}";
                     game_started = false; // Changing the bool parameter to false (game ended)
                     winner_O = false;
                 }
