@@ -327,7 +327,7 @@ namespace TicTacToe
                     if (TicTac[0, 2] == 1) winner_X = true;
                     else if (TicTac[0, 2] == 0) winner_O = true;
                 }
-                // Check if there are any empty spaces in the game in order to check if it is a tie
+                // Check if there are any empty spaces in the game to check if it is a tie
                 for (int i = 0; i < 3; i++)
                 {
                     for (int j = 0; j < 3; j++)
@@ -345,21 +345,21 @@ namespace TicTacToe
                 {
                     Toast.MakeText(Application.Context, "X is the winner!", ToastLength.Short).Show(); // Pop a Toast that says X is the winner
                     count_winnings_X++; // Adding to the count of winnings
-                    game_started = false; // Changing the bool paramter to false (game ended)
+                    game_started = false; // Changing the bool parameter to false (game ended)
                     winner_X = false;
                 }
                 else if (winner_O)
                 {
                     Toast.MakeText(Application.Context, "O is the winner!", ToastLength.Short).Show(); // Pop a Toast that says O is the winner
                     count_winnings_O++; // Adding to the count of winnings
-                    game_started = false; // Changing the bool paramter to false (game ended)
+                    game_started = false; // Changing the bool parameter to false (game ended)
                     winner_O = false;
                 }
 
                 else if (tie)
                 {
                     Toast.MakeText(Application.Context, "It is a tie!", ToastLength.Short).Show(); // Pop a Toast that says the game is tied
-                    game_started = false; // Changing the bool paramter to false (game ended)
+                    game_started = false; // Changing the bool parameter to false (game ended)
                     tie = false; 
                 }
             }
